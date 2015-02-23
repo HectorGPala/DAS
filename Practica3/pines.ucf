@@ -1,0 +1,96 @@
+#configuracion Practica3
+#salida del oscilador a 100MHz
+#
+#NET clk_in LOC=T9;
+#
+
+	#switches placa superior
+
+#NET a<3> LOC=K4;
+#NET a<2> LOC=K3;
+#NET a<1> LOC=K2;
+#NET a<0> LOC=J4;
+
+	#switches placa extendida
+
+NET switches<0> LOC=P12;
+NET switches<1> LOC=J1;
+NET switches<2> LOC=H1;
+NET switches<3> LOC=H3;
+NET switches<4> LOC=G2;
+NET switches<5> LOC=K15;
+NET switches<6> LOC=K16;
+NET switches<7> LOC=F15;
+
+#
+	#push buttons placa superior
+NET rst LOC=E11; 
+NET intro LOC=A13; 
+
+	# Push button placa extendida
+#NET pushb1 LOC=H4;
+#NET pushb2 LOC=L5;
+#NET pushb3 LOC=N2;
+#NET pushb4 LOC=M3;
+
+
+#barra de leds placa extendida
+
+NET lock_signal LOC=L5;
+#NET debug<6> LOC=N2;
+#NET debug<5> LOC=M3;
+#NET debug<4> LOC=N1;
+#NET debug<3> LOC=T13;
+#NET debug<2> LOC=L15;
+#NET debug<1> LOC=J13;
+#NET debug<0> LOC=H15;
+#NET debug<> LOC=J16;
+#NET debug<> LOC=J14;
+
+ 
+
+#Display 7-segmentos 
+#
+#		   S0
+#		   ---
+#	    S5	|	|s1
+#		    S6
+#		   ---
+#	    S4	|	|S2
+#
+#		   ---
+#		   S3
+
+
+#Display 7-segmentos de la placa superior
+
+#net segs<6> loc=R10;
+#net segs<5> loc=P10;
+#net segs<4> loc=M11;
+#NET segs<3> loc=M6;
+#NET segs<2> loc=N6;
+#NET segs<1> loc=T7;
+#NET segs<0> loc=R7;
+
+#Display 7-segmentos de la parte izquierda de la placa extendida:
+
+#NET displayi<0> LOC=H14;
+#NET displayi<1> LOC=M4;
+#NET displayi<2> LOC=P1;
+#NET displayi<3> LOC=N3;
+#NET displayi<4> LOC=M15;
+#NET displayi<5> LOC=H13;
+#NET displayi<6> LOC=G16;
+
+
+
+
+#Display 7-segmentos de la parte derecha de la placa extendida
+
+NET segs<6> loc=E2;
+NET segs<5> loc=E1;
+NET segs<4> loc=F3;
+NET segs<3> loc=F2;
+NET segs<2> loc=G4;
+NET segs<1> loc=G3;
+NET segs<0> loc=G1;
